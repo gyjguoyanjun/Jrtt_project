@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tx_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/uj" />
+
+        <ImageView
+            android:id="@+id/menu_qq"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/uk" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/un" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tx_2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"></View>
+
+        <ImageView
+            android:id="@+id/tx2_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"></View>
+
+        <TextView
+            android:id="@+id/tx2_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="sss"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/menu_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/vs"
+        android:text="更多登录方式" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Layout_Menu1"
+                style="@style/menu_layout">
+
+                <ImageView
+                    style="@style/menu_image"
+                    android:src="@mipmap/ic_drawer_search_normal" />
+
+                <TextView
+                    style="@style/menu_text"
+                    android:text="搜索" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Menu2"
+                style="@style/menu_layout">
+
+                <ImageView
+                    style="@style/menu_image"
+                    android:src="@mipmap/ic_drawer_favorite_normal" />
+
+                <TextView
+                    style="@style/menu_text"
+                    android:text="收藏" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Menu3"
+                style="@style/menu_layout">
+
+                <ImageView
+                    style="@style/menu_image"
+                    android:src="@mipmap/ic_drawer_message_normal" />
+
+                <TextView
+                    style="@style/menu_text"
+                    android:text="消息" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Menu4"
+                style="@style/menu_layout">
+
+                <ImageView
+                    style="@style/menu_image"
+                    android:src="@mipmap/ic_drawer_offline_normal" />
+
+                <TextView
+                    style="@style/menu_text"
+                    android:text="离线" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Menu5"
+                style="@style/menu_layout">
+
+                <ImageView
+                    style="@style/menu_image"
+                    android:src="@mipmap/left_drawer_activity" />
+
+                <TextView
+                    style="@style/menu_text"
+                    android:text="活动" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Menu6"
+                style="@style/menu_layout">
+
+                <ImageView
+                    style="@style/menu_image"
+                    android:src="@mipmap/ic_drawer_setting_normal" />
+
+                <TextView
+                    style="@style/menu_text"
+                    android:text="设置" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Menu7"
+                style="@style/menu_layout">
+
+                <ImageView
+                    style="@style/menu_image"
+                    android:src="@mipmap/ic_drawer_feedback_normal" />
+
+                <TextView
+                    style="@style/menu_text"
+                    android:text="反馈" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Menu8"
+                style="@style/menu_layout">
+
+                <ImageView
+                    style="@style/menu_image"
+                    android:src="@mipmap/ic_drawer_appstore_normal" />
+
+                <TextView
+                    style="@style/menu_text"
+                    android:text="精彩应用" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Off_line_download_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/a28"
+            android:gravity="center"
+            android:text="离线下载" />
+
+        <RadioButton
+            android:id="@+id/night_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/a96"
+            android:gravity="center"
+            android:text="夜间模式" />
+
+        <RadioButton
+            android:id="@+id/setting_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/adt"
+            android:gravity="center"
+            android:text="设置" />
+    </RadioGroup>
+
+</LinearLayout>
